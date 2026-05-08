@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== 全体設定 ===== */
+body {
+  font-family: "Noto Serif JP", serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== レイアウト ===== */
+
+
+/*----------------header------------------*/
+#header {
+  width: 100%;
+}
+
+#header .logo{
+  width: 280px;
+}
+
+#header .main{
+  position: relative;
+}
+
+#header .bg{
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  width: 200px;
+  z-index: 2;
+  max-width: 100%;
+}
+
+#header .banner{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+
+#header .nav_inner ul{
+  display: flex;
+  gap: 36px;
+}
+
+#header .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 107.29px;
+}
+
+#header .wrapper{
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-left: auto;
+}
+
+#header .nav_inner a{
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1.80;
+}
+
+#header .contact{
+  background: #000;
+  color: #fff;
+  padding: 16px 40px;
+}
+
+/*------------------------main---------------------------------*/
+main  {
+  width: 100%;
+}
+
+#aboutus{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  gap: 0 80px;
+  margin: 104px 0;
+}
+
+#aboutus .subheading{
+  font-family: "Shippori Mincho" ,serif;
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+#aboutus .text{
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 2.40;
+  margin: 40px 0 0 0;
+}
+
+/*-----------------------menu---------------------------*/
+#menu{
+  background-color: #fff;
+  position: relative;
+  display: block;
+  width: 1440px;
+  height: max-content;
+} 
+
+#menu .bg{
+  position: absolute;
+  bottom: auto;
+  height: 95%;
+  left: auto;
+  right: 0px;
+  top: 0px;
+  width: 95%;
+  z-index: -2;
+  max-width: 95%;
+  
+}
+
+#menu .logo{
+  height: auto;
+  width: 200px;
+  max-width: 100%;
+}
+
+#menu .subheading{
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+
+#menu .tag{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  left: 40px;
+  right: auto;
+  top: 60px;
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+#menu .main{
+  position: absolute;
+}
+footer {
+  width: 100%;
+}
